@@ -33,7 +33,7 @@
  */
 include('connection.php');
 if($_GET['category'] == 'work'){
-$sql = "SELECT entryTitle, entrySummary, category, submitter FROM blogView WHERE category = 'work%'";
+$sql = "SELECT entryTitle, entrySummary, category, submitter FROM blogView WHERE category = 'work'";
 $result = mysqli_query($con,$sql);
 if ($result) {
     while ($row = mysqli_fetch_assoc($result)) {
