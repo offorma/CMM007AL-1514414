@@ -34,16 +34,19 @@
 include('connection.php');
 $sql = "SELECT entryTitle, entrySummary, category, submitter FROM blogView";
 $result = mysqli_query($con,$sql);
-if ($result)
-{echo 'true';}
-while($row = mysqli_fetch_assoc($result)){
-   echo"<div class='row'> <div class='col-lg-8 col-lg-offset-2 '>
-            <div>
-                <span><a href='#'>{$row['entryTitle']}</a> <span>By</span><span>{$row['submitter']}</span></span>
-                <P>{$row['category']}</P>
-                <p>{$row['entrySummary']}</p>
-            </div>
-            </div><hr>";
+if ($result) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo "<div class='row'>
+                <div class='col-lg-8 col-lg-offset-2 '>
+                    <div>
+                        <span><a href='#'>{$row['entryTitle']}</a> <span>By</span><span>{$row['submitter']}</span></span>
+                        <P>{$row['category']}</P>
+                        <p>{$row['entrySummary']}</p>
+                    </div>
+            </div></div><hr>";
+    }
+}else{
+    echo "Sorry something went wrong with ur request!!!";
 }
 ?>
 
