@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MY blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="container">
+    <div class="row">
+        <nav>
+            <li class="mynav"><a href="list.html">All Blog Items</a></li>
+            <li class="mynav"><a href="blog.html">Work Blog Items</a></li>
+            <li class="mynav"><a href="blog.html">University Blog Items</a></li>
+            <li class="mynav"><a href="blog.html">Family Blog Items</a></li>
+            <li class="mynav" ><a href="add.html">Insert Blog Item</a></li>
+        </nav>
+    </div>
+</header>
+
+<content class = "container">
+    <div class="row">
+        <div class="col-lg-8 ">
+            <form action="">
+                <div class="form-group">
+                    <label for="title">Entry Title</label>
+                    <input class="form-control" type="text" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="title">Entry Summary</label>
+                    <textarea  class="form-control" name="summary"  cols="30" rows="10"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="title">Category</label>
+                    <select class="form-control"  name="category">
+                        <option value="politics"> Politics</option>
+                        <option value="sports"> Sports</option>
+                        <option value="tech">Technology</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="title">Submitted By:</label>
+                    <input class="form-control" type="text" name="submitted">
+                </div>
+
+
+                    <button class="right" value="Submit" name="submit">sss</button>
+
+
+            </form>
+        </div>
+        <div class="col-lg-4">
+            <img src="images/blog.png" alt="">
+        </div>
+    </div>
+
+</content>
+
+<footer  class ="container"><hr>
+    <div class="row">
+        <p>Designed by Chukwunonso Offorma, "2016</p>
+    </div>
+</footer>
+<script   src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>
