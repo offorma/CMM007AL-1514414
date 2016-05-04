@@ -3,3 +3,8 @@ div > img{
     height: 400px;
     width: 400px;
 }
+*{
+    font-family: Roboto-Slab;
+    color: darkslategray;
+    font-size: large;
+}
