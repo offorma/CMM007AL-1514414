@@ -1,6 +1,9 @@
 
 .mynav{
     text-decoration: none;
+
+}
+.mynav>a{
     display: inline;
 }
 div > img{
