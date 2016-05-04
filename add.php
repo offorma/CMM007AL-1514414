@@ -100,7 +100,8 @@ if ($_SERVER['REQUEST_METHOD']==='GET'){
         header('Location: blog.php');
         echo "true";
 
-    }
+    }else
+        echo mysqli_error($result);
 
 
 
