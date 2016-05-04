@@ -6,6 +6,8 @@
  * Time: 11:11
  */
 
+include(connection.php);
+
 if ($_SERVER['REQUEST_METHOD']==='GET'){
     echo '<!DOCTYPE html>
 <html lang="en">
@@ -86,7 +88,6 @@ if ($_SERVER['REQUEST_METHOD']==='GET'){
 
 }elseif($_SERVER['REQUEST_METHOD']==='POST'){
 
-    include(connection.php);
     $title = $_POST['title'];
     $summary = $_POST['summary'];
     $category = $_POST['category'];
