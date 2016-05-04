@@ -33,7 +33,7 @@
  */
 include('connection.php');
 if($_GET['category'] == 'work'){
-$sql = "SELECT entryTitle, entrySummary, category, submitter FROM blogView WHERE category = work";
+$sql = "SELECT entryTitle, entrySummary, category, submitter FROM blogView WHERE category = 'work%'";
 $result = mysqli_query($con,$sql);
 if ($result) {
     while ($row = mysqli_fetch_assoc($result)) {
@@ -48,7 +48,7 @@ if ($result) {
         }
     }
 }elseif($_GET['category'] == 'university'){
-$sql = "SELECT entryTitle, entrySummary, category, submitter FROM blogView WHERE category = university";
+$sql = "SELECT entryTitle, entrySummary, category, submitter FROM blogView WHERE category = 'university'";
 $result = mysqli_query($con,$sql);
 if ($result) {
 while ($row = mysqli_fetch_assoc($result)) {
@@ -63,7 +63,7 @@ while ($row = mysqli_fetch_assoc($result)) {
             }
         }
 }elseif($_GET['category'] == 'family'){
-    $sql = "SELECT entryTitle, entrySummary, category, submitter FROM blogView WHERE category = family";
+    $sql = "SELECT entryTitle, entrySummary, category, submitter FROM blogView WHERE category = 'family'";
     $result = mysqli_query($con,$sql);
     if ($result) {
         while ($row = mysqli_fetch_assoc($result)) {
