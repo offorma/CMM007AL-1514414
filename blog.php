@@ -39,7 +39,7 @@ if ($result) {
         echo "<div class='row'>
                 <div class='col-lg-8 col-lg-offset-2 '>
                     <div>
-                        <span><a href='#'>{$row['entryTitle']}</a> <span>By</span><span>{$row['submitter']}</span></span>
+                        <span><a href='#'>{$row['entryTitle']}</a> <span>By </span><span>{$row['submitter']}</span></span>
                         <P>{$row['category']}</P>
                         <p>{$row['entrySummary']}</p>
                     </div>
