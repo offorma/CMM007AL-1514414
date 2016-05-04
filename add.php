@@ -97,10 +97,12 @@ if ($_SERVER['REQUEST_METHOD']==='GET'){
 
     $result = mysqli_query($con,$sql);
     if ($result){
+        header('Location: blog.php');
         echo "true";
+
     }
 
-    header('Location: blog.php');
+
 
 }else{
     header('Location: index.php');
