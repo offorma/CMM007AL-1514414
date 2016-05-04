@@ -51,8 +51,8 @@ if ($_SERVER['REQUEST_METHOD']==='GET'){
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="title">Submitted By:</label>
-                    <input class="form-control" type="text" name="submitted" >
+                    <label for="title">Submitter By:</label>
+                    <input class="form-control" type="text" name="submitter" >
                 </div>
 
 
@@ -78,6 +78,18 @@ if ($_SERVER['REQUEST_METHOD']==='GET'){
 
 
 }elseif($_SERVER['REQUEST_METHOD']==='POST'){
+
+    include(connection.php);
+    $title = $_POST['title'];
+    $summary = $_POST['summary'];
+    $category = $_POST['category'];
+    $submitter = $_POST['submitter'];
+    $sql = "INSERT INTO blogView (entryTitle, entrySummary, category, submitter)
+            VALUES ('$title','$summary','$category','$submitter')";
+
+    $result = mysqli_query($con,$sql);
+
+    header('Location: blog.php');
 
 }else{
     header('Location: index.php');
