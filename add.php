@@ -93,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD']==='GET'){
     $category = $_POST['category'];
     $submitter = $_POST['submitter'];
     $sql = "INSERT INTO blogview (entryTitle, entrySummary, category, submitter)
-            VALUES ('$title','$summary','$category','$submitter')";
+            VALUE ('$title','$summary','$category','$submitter')";
 
     $result = mysqli_query($con,$sql);
     if ($result){
