@@ -1,10 +1,10 @@
 
 .mynav{
-    text-decoration: none;
+    display: inline;
 
 }
 .mynav>a{
-    display: inline;
+
 }
 div > img{
     height: 400px;
