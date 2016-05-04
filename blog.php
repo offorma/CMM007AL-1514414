@@ -10,16 +10,18 @@
 <body>
 <header class="container">
     <div class="row">
-        <div class="pull-left">
+        <div class="pull-left ">
             <p class = "logo">myBlog</p>
             <p>because the internet needs to know what i think</p>
         </div>
+    </div>
+    <div class="row">
         <nav>
             <ul class = "nav nav-pills">
                 <li class="mynav"><a href="blog.php">All Blog Items</a></li>
-                <li class="mynav"><a href="blog.php?category=work">Work Blog Items</a></li>
-                <li class="mynav"><a href="blog.php?category=university">University Blog Items</a></li>
-                <li class="mynav"><a href="blog.php?category=family">Family Blog Items</a></li>
+                <li class="mynav"><a href="blog.php">Work Blog Items</a></li>
+                <li class="mynav"><a href="blog.php">University Blog Items</a></li>
+                <li class="mynav"><a href="blog.php">Family Blog Items</a></li>
                 <li class="mynav" ><a href="add.php">Insert Blog Item</a></li>
             </ul>
         </nav>

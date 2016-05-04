@@ -19,10 +19,12 @@ if ($_SERVER['REQUEST_METHOD']==='GET'){
 <body>
 <header class="container">
     <div class="row">
-    <div class="pull-left">
+        <div class="pull-left ">
             <p class = "logo">myBlog</p>
             <p>because the internet needs to know what i think</p>
         </div>
+        </div>
+        <div class="row">
         <nav>
             <ul class = "nav nav-pills">
                 <li class="mynav"><a href="blog.php">All Blog Items</a></li>
